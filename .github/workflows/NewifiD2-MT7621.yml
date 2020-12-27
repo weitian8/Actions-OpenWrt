@@ -9,8 +9,8 @@ on:
       - master
     paths:
       - 'NewifiD2/NewifiD2.config'
-  schedule:
-    - cron: 0 16 * * *
+  # schedule:
+  #   - cron: 0 16 * * *
   # watch:
   #   types: started
 
