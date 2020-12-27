@@ -4,10 +4,10 @@ on:
   repository_dispatch:
 #  release:
 #    types: published
-  schedule:
-    - cron: 30 23 * * *
-  watch:
-    types: started
+#  schedule:
+#    - cron: 30 23 * * *
+#  watch:
+#    types: started
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
