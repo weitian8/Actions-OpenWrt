@@ -25,7 +25,7 @@ env:
   #SSH_ACTIONS: false
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: false
-  UPLOAD_COWTRANSFER: true
+  UPLOAD_COWTRANSFER: false
   UPLOAD_WETRANSFER: false
   TZ: Asia/Shanghai
   FILE_NAME: GDock-p2w_r619ac
@@ -148,20 +148,20 @@ jobs:
         name: OpenWrt_firmware${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
         path: ${{ env.FIRMWARE }}
 
-    - name: Create release
-      id: release
-      uses: ncipollo/release-action@v1
-      with:
-        name: R${{ env.DATE }} for ${{ env.PRODUCT_NAME }}
-        allowUpdates: true
-        tag: ${{ env.FILE_NAME }}
-        commit: master
-        token: ${{ secrets.RELEASES_TOKEN }}
-        body: |
-          默认IP： 192.168.7.1 默认密码： password
-          当前使用版本:【编译前的最后一次[➦主源码](https://github.com/coolsnowwolf/lede)更新记录】
-          ${{ env.useVersionInfo }}
-        artifacts: ${{ env.FIRMWARE }}/*
+    # - name: Create release
+    #   id: release
+    #    uses: ncipollo/release-action@v1
+    #   with:
+    #     name: R${{ env.DATE }} for ${{ env.PRODUCT_NAME }}
+    #     allowUpdates: true
+    #     tag: ${{ env.FILE_NAME }}
+    #     commit: master
+    #     token: ${{ secrets.RELEASES_TOKEN }}
+    #     body: |
+    #       默认IP： 192.168.7.1 默认密码： password
+    #       当前使用版本:【编译前的最后一次[➦主源码](https://github.com/coolsnowwolf/lede)更新记录】
+    #       ${{ env.useVersionInfo }}
+    #     artifacts: ${{ env.FIRMWARE }}/*
     
     # - name: WeChat notification
     #   if: steps.organize.outputs.status == 'success' && !cancelled()
