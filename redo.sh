@@ -92,8 +92,8 @@ svn co https://github.com/project-openwrt/openwrt/trunk/package/lienol/luci-app-
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-eqos /home/xyz/lede/package/luci-app-eqos
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-gost /home/xyz/lede/package/luci-app-gost 
 svn co https://github.com/kenzok8/openwrt-packages/trunk/gost /home/xyz/lede/package/gost
-svn co https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus /home/xyz/lede/package/luci-app-ssr-plus
-svn co https://github.com/fw876/helloworld/trunk/naiveproxy /home/xyz/lede/package/naiveproxy
+svn co https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus /home/xyz/lede/package/helloworld/luci-app-ssr-plus
+svn co https://github.com/fw876/helloworld/trunk/naiveproxy /home/xyz/lede/package/helloworld/naiveproxy
 
 #svn co https://github.com/HoldOnBro/Actions-OpenWrt/trunk/x86_64/r8125-mod /home/xyz/lede/package/r8125-mod
 
