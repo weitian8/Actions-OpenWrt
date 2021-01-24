@@ -72,8 +72,8 @@ git clone https://github.com/sirpdboy/luci-theme-opentopd package/luci-theme-ope
 svn co https://github.com/project-openwrt/openwrt/trunk/package/lienol/luci-app-socat package/luci-app-socat
 
 git clone https://github.com/xrouterservice/luci-app-koolddns.git package/luci-app-koolddns
-svn co https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus package/luci-app-ssr-plus
-svn co https://github.com/fw876/helloworld/trunk/naiveproxy package/naiveproxy
+svn co https://github.com/fw876/helloworld/trunk/luci-app-ssr-plus package/helloworld/luci-app-ssr-plus
+svn co https://github.com/fw876/helloworld/trunk/naiveproxy package/helloworld/naiveproxy
 #赋予koolddns权限
 chmod 0755 package/luci-app-koolddns/root/etc/init.d/koolddns
 chmod 0755 package/luci-app-koolddns/root/usr/share/koolddns/aliddns
