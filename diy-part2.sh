@@ -72,8 +72,8 @@ git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/luci-th
 svn co https://github.com/project-openwrt/openwrt/trunk/package/lienol/luci-app-socat package/luci-app-socat
 
 # fw876/helloworld
-# sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
+sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+# sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
 
 git clone https://github.com/xrouterservice/luci-app-koolddns.git package/luci-app-koolddns
 # git clone https://github.com/fw876/helloworld.git package/helloworld
