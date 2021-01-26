@@ -58,21 +58,22 @@ cd luci-app-wrtbwmon
 git reset --hard ff7773abbf71120fc39a276393b29ba47353a7e2 && cp -r luci-app-wrtbwmon ../package/
 cd ..
 # themes
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-theme-darkmatter package/luci-theme-darkmatter
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-theme-Butterfly-dark package/luci-theme-Butterfly-dark
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-theme-Butterfly package/luci-theme-Butterfly
-svn co https://github.com/solidus1983/luci-theme-opentomato/trunk/luci/themes/luci-theme-opentomato package/luci-theme-opentomato
-svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-edge package/luci-theme-edge
-svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-argon_new package/luci-theme-argon_new
-svn co https://github.com/rosywrt/luci-theme-rosy/trunk/luci-theme-rosy package/luci-theme-rosy
-git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom package/luci-theme-infinityfreedom
+# svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-theme-darkmatter package/luci-theme-darkmatter
+# svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-theme-Butterfly-dark package/luci-theme-Butterfly-dark
+# svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-theme-Butterfly package/luci-theme-Butterfly
+# svn co https://github.com/solidus1983/luci-theme-opentomato/trunk/luci/themes/luci-theme-opentomato package/luci-theme-opentomato
+# svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-edge package/luci-theme-edge
+# svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-argon_new package/luci-theme-argon_new
+# svn co https://github.com/rosywrt/luci-theme-rosy/trunk/luci-theme-rosy package/luci-theme-rosy
+# git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom package/luci-theme-infinityfreedom
 git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/luci-theme-opentomcat
-git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git package/luci-theme-atmaterial
-git clone https://github.com/sirpdboy/luci-theme-opentopd package/luci-theme-opentopd
+# git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git package/luci-theme-atmaterial
+# git clone https://github.com/sirpdboy/luci-theme-opentopd package/luci-theme-opentopd
 svn co https://github.com/project-openwrt/openwrt/trunk/package/lienol/luci-app-socat package/luci-app-socat
 
 # fw876/helloworld
-sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+# sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
 
 git clone https://github.com/xrouterservice/luci-app-koolddns.git package/luci-app-koolddns
 # git clone https://github.com/fw876/helloworld.git package/helloworld
@@ -82,7 +83,7 @@ git clone https://github.com/xrouterservice/luci-app-koolddns.git package/luci-a
 chmod 0755 package/luci-app-koolddns/root/etc/init.d/koolddns
 chmod 0755 package/luci-app-koolddns/root/usr/share/koolddns/aliddns
 
-svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-app-unblockneteasemusic-mini package/luci-app-unblockneteasemusic-mini
+# svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-app-unblockneteasemusic-mini package/luci-app-unblockneteasemusic-mini
 #添加subweb&subconverter
 svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/duktape package/duktape
 svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/jpcre2 package/jpcre2
