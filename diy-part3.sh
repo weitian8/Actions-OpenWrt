@@ -26,5 +26,5 @@ svn co https://github.com/kenzok8/openwrt-packages/trunk/gost package/gost
 git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/luci-theme-opentomcat
 
 # fw876/helloworld
-sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-# sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
+# sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+sed -i '$a src-git helloworld https://github.com/fw876/helloworld' feeds.conf.default
