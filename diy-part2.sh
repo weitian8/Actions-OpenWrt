@@ -27,6 +27,8 @@ git clone https://github.com/lisaac/luci-app-dockerman.git package/luci-app-dock
 git clone https://github.com/rufengsuixing/luci-app-autoipsetadder.git package/luci-app-autoipsetadder
 git clone https://github.com/mchome/openwrt-dogcom.git package/openwrt-dogcom
 git clone https://github.com/garypang13/luci-app-bypass package/luci-app-bypass
+git clone https://github.com/garypang13/luci-app-dnsfilter package/luci-app-dnsfilter
+git clone https://github.com/project-lede/luci-app-godproxy package/luci-app-godproxy
 
 #git clone https://github.com/vernesong/OpenClash.git package/OpenClash
 #cp -r package/OpenClash/luci-app-openclash package/
@@ -47,6 +49,8 @@ svn co https://github.com/project-openwrt/openwrt/trunk/package/lienol/luci-app-
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/luci-app-passwall package/luci-app-passwall
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/ssocks package/ssocks
 svn co https://github.com/fw876/helloworld/trunk/xray-core package/xray-core
+svn co https://github.com/fw876/helloworld/trunk/xray-plugin package/xray-plugin
+#svn co https://github.com/xiaorouji/openwrt-passwall/trunk/xray-core package/xray-core
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-gost package/luci-app-gost
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/gost package/gost
 svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/luci-app-gost package/luci-app-gost
@@ -92,7 +96,8 @@ svn co https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t/smartdns 
 svn co https://github.com/project-openwrt/openwrt/trunk/package/ntlf9t/luci-app-smartdns package/luci-app-smartdns
 #git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
 #git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
-
+svn co https://github.com/linkease/ddnsto-openwrt/trunk/ddnsto package/ddnsto
+svn co https://github.com/linkease/ddnsto-openwrt/trunk/luci-app-ddnsto package/luci-app-ddnsto
 #添加ksmbd
 #svn co https://github.com/openwrt/luci/trunk/applications/luci-app-ksmbd package/luci-app-ksmbd
 #添加udp2raw
